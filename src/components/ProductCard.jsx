@@ -3,9 +3,11 @@ import React from 'react'
 import { FaCheck } from 'react-icons/fa6'
 import { toast } from 'react-toastify'
 
-const ProductCard = ({product , setCart}) => {
+const ProductCard = ({product , setCart , cart}) => {
+
     const { name, description, price,tag, period, features, icon} = product
     const handleBuyNow = (product) => {
+     
         setCart((prevCart) => [...prevCart, product]);
          toast.success(`${name} added to cart !`,{
             position: "top-right",
@@ -13,7 +15,11 @@ const ProductCard = ({product , setCart}) => {
             hideProgressBar: false,
          }) 
      
+     
     }   
+    
+    
+     
   return (
     <div className='border border-gray-200 rounded-md'>
        <div className='relative p-6 space-y-2'>

@@ -29,7 +29,7 @@ const PremiumTools = ({ setCart, cart }) => {
             filter === "products" ? (
                   <div>
             <Suspense fallback={<div>Loading...</div>}>
-              <Products setCart = {setCart} />
+              <Products setCart = {setCart} cart = {cart} />
             </Suspense>
           </div> 
             ) :(

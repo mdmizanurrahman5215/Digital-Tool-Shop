@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className='bg-gray-900 text-white'>
       <div className='container mx-auto '>
-        <div className='flex justify-between gap-10 py-20 '>
+        <div className='flex flex-col md:flex-row justify-between gap-10 py-20 '>
             <div>
                 <h1 className='text-4xl font-bold mb-4'>DigiTools</h1>
                 <p className='text-gray-400'>Premium digital tools for creators, <br /> professionals, and businesses. Work smarter <br /> with our suite of powerful tools.</p>
@@ -53,9 +53,9 @@ const Footer = () => {
 
 
 
-        <div className='flex justify-between gap-10 py-10 border-t border-gray-600'>
+        <div className='flex flex-col md:flex-row text-center md:text-start justify-between gap-10 py-10 border-t border-gray-600'>
             <p className='text-[#627382]'>© 2026 Digitools. All rights reserved.</p>
-            <div className='text-[#627382] flex gap-4'>
+            <div className='text-[#627382] flex gap-4 mx-auto md:mx-0'>
                 <span>Privacy Policy</span>
                 <span>Terms of Service</span>
                 <span>Cookie Policy</span>

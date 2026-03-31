@@ -5,16 +5,16 @@ import rocket from '../assets/rocket.png'
 
 const Step = () => {
   return (
-    <div className='bg-[#F9FAFC] mb-20'>
-       <div className='container mx-auto py-20'>
+    <div className='bg-[#F9FAFC] md:mb-20'>
+       <div className='container mx-auto py-10 md:py-20'>
 
         <div className='flex flex-col justify-center items-center gap-4'>
             <h1 className='text-4xl font-semibold'>Get Started in 3 Steps</h1>
             <p className='text-gray-600 font-semibold'>Start using premium digital tools in minutes, not hours.</p>
         </div>
-        <div className='flex flex-col md:flex-row justify-center items-center gap-8 mt-10'>
+        <div className='flex flex-col md:flex-row justify-center items-center gap-8 mt-6 md:mt-10'>
             <div className='flex justify-center items-center flex-col text-center shadow px-6 py-12 relative rounded-lg bg-white'>
-                <div>
+                <div className=' w-22 h-22 rounded-full flex justify-center items-center bg-purple-100'>
                     <img src={user} alt="User" />
                 </div>
                 <h1 className='text-2xl font-semibold'>Create Account</h1>
@@ -24,7 +24,7 @@ const Step = () => {
                 </div>
             </div>
             <div className='flex justify-center items-center flex-col text-center shadow px-6 py-12 relative rounded-lg bg-white'>
-                <div>
+                <div  className=' w-22 h-22 rounded-full flex justify-center items-center bg-purple-100'>
                     <img src={packageImg} alt="Package " />
                 </div>
                 <h1 className='text-2xl font-semibold'>Choose Products</h1>
@@ -34,7 +34,7 @@ const Step = () => {
                 </div>
             </div>
             <div className='flex justify-center items-center flex-col text-center shadow px-6 py-12 relative rounded-lg bg-white'>
-                <div>
+                <div  className=' w-22 h-22 rounded-full flex justify-center items-center bg-purple-100'>
                     <img src={rocket} alt="Rocket" />
                 </div>
                 <h1 className='text-2xl font-semibold'>Start Creating</h1>
