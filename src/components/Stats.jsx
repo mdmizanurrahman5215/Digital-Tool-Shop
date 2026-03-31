@@ -4,7 +4,7 @@ const Stats = () => {
   return (
     <>
     <div className='gradient my-10'>
-         <div className='container mx-auto flex items-center justify-around py-10  text-white '>
+         <div className='container mx-auto flex items-center justify-around py-20  text-white '>
             
                 <div className=''>
                     <h1 className='text-4xl font-bold mb-4'>50K+</h1>

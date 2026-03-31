@@ -69,7 +69,7 @@ const Pricing = () => {
           </p>
           <div>
             <p className="text-4xl font-bold">
-              $29 / <span className="text-xl">month</span>
+              $29/<span className="text-xl">month</span>
             </p>
           </div>
           <ul>

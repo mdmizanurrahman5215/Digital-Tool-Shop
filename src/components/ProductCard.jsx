@@ -7,6 +7,16 @@ const ProductCard = ({product , setCart , cart}) => {
 
     const { name, description, price,tag, period, features, icon} = product
     const handleBuyNow = (product) => {
+       
+      const isAlreadyInCart = cart.some((item) => item.id === product.id);
+      if (isAlreadyInCart) {
+         toast.info(`${name} is already in the cart!`, {
+          position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+         });
+         return;
+        }
      
         setCart((prevCart) => [...prevCart, product]);
          toast.success(`${name} added to cart !`,{
@@ -14,9 +24,13 @@ const ProductCard = ({product , setCart , cart}) => {
             autoClose: 3000,
             hideProgressBar: false,
          }) 
+         
+         
      
      
     }   
+    console.log(cart);
+
     
     
      
@@ -29,7 +43,7 @@ const ProductCard = ({product , setCart , cart}) => {
            <h1 className='text-2xl font-semibold'>{name}</h1>
            <p className='text-gray-600 '>{description}</p>
            <div>
-            <p className='text-3xl font-bold '>${price.toFixed(2)} <span className='text-lg font-normal text-gray-600 capitalize'>/ {period}</span></p>
+            <p className='text-3xl font-bold '>${price.toFixed(2)}<span className='text-lg font-normal text-gray-600 capitalize'>/ {period}</span></p>
            </div>
            <ul>
             {features.map((feature, index)=>{
