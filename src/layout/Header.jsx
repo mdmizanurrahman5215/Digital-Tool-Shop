@@ -1,7 +1,7 @@
 import React from 'react'
 import { CiShoppingCart } from 'react-icons/ci'
 
-const Header = () => {
+const Header = ({ cart }) => {
   return (
    <>
     <div className='border-b border-gray-200'>
@@ -18,7 +18,7 @@ const Header = () => {
         </div>
         <div className='flex justify-center items-center gap-4 font-semibold text-gray-900'>
             <div className='text-3xl relative cursor-pointer'><CiShoppingCart />
-            <span className='absolute -top-2 -right-2 bg-red-500 text-white text-sm rounded-full h-5 w-5 flex items-center justify-center'>0</span>
+            <span className='absolute -top-2 -right-2 bg-red-500 text-white text-sm rounded-full h-5 w-5 flex items-center justify-center'>{cart.length}</span>
             </div>
             <button className='cursor-pointer'>Login</button>
             <button className='bg-gradient-to-l from-[#9514FA] to-[#4F39F6] px-4 py-2 rounded-full text-white cursor-pointer'>Get Started</button>

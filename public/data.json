@@ -15,7 +15,7 @@
     "id": 2,
     "name": "TaskFlow",
     "description": "A productivity tool to manage daily tasks and team collaboration efficiently.",
-    "price": 0,
+    "price": 10.99,
     "period": "one-time",
     "tag": "new",
     "tagType": "new",
