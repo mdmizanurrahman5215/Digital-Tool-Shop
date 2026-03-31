@@ -3,6 +3,7 @@ import './App.css'
 import Banner from './components/Banner'
 import PremiumTools from './components/PremiumTools'
 import Stats from './components/Stats'
+import Step from './components/Step'
 import Header from './layout/Header'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
  <Banner/>
  <Stats/>
  <PremiumTools/>
+ <Step/>
 </>
   )
 }
