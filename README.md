@@ -1,16 +1,34 @@
-# React + Vite
+# 🛒 Digitools Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Overview
+**Digitools Shop** is a modern e-commerce web application where users can browse digital tools, add them to a cart, remove items, and view the total number of selected products in real time.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Description
+Digitools Shop is a responsive and user-friendly platform built with React. It simulates a real-world shopping cart system where users can manage their selected tools efficiently. The application provides instant feedback through notifications and ensures a smooth UI/UX using Tailwind CSS and DaisyUI.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies Used
+- React.js  
+- JavaScript (ES6+)  
+- Tailwind CSS  
+- DaisyUI  
+- React Toastify  
+- JSON (for data handling)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Key Features
+- 🛍️ **Add to Cart System**  
+  Users can easily add tools to the cart with real-time updates.
+
+- ❌ **Remove from Cart**  
+  Items can be removed instantly from the cart.
+
+- 🔢 **Live Cart Summary**  
+  Shows total number of items and price dynamically.
+
+---
+
