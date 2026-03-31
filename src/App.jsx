@@ -8,13 +8,11 @@ import Step from "./components/Step";
 import Footer from "./layout/Footer";
 import Header from "./layout/Header";
 
-
 function App() {
   const [cart, setCart] = useState([]);
 
   return (
     <>
-     
       <Header cart={cart} />
       <Banner />
       <Stats />

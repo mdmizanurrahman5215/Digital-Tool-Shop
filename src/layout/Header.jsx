@@ -5,7 +5,7 @@ import { RiMenu2Line } from 'react-icons/ri'
 
 const Header = ({ cart }) => {
     const [open , setOpen]=useState(false)
-    console.log(open);
+  
     
   return (
    <>

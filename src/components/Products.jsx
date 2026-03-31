@@ -15,7 +15,7 @@ import ProductCard from './ProductCard'
  const productsPromise = fetchProducts()
 const Products = ({ setCart , cart }) => {
     const products = use(productsPromise)
-    console.log(products);
+   
     
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
