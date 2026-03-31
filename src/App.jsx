@@ -4,6 +4,7 @@ import Banner from './components/Banner'
 import PremiumTools from './components/PremiumTools'
 import Stats from './components/Stats'
 import Step from './components/Step'
+import Footer from './layout/Footer'
 import Header from './layout/Header'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
  <Stats/>
  <PremiumTools/>
  <Step/>
+ <Footer/>
 </>
   )
 }

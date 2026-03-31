@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <>
       <div>
-        <div className="container mx-auto grid  md:grid-cols-2 items-center py-20 gap-10 ">
+        <div className="container mx-auto grid  md:grid-cols-2 items-center justify-between py-20 gap-10 ">
           <div className="left space-y-4">
             <div className="w-fit px-4 py-1 flex items-center gap-2 rounded-full bg-[#E1E7FF]">
               <div className="animate-pulse transition-linear border-2 p-[1px] shadow-[0px_4px_10px_rgba(0,0,0,0.2)] rounded-full border-[#6C63FF]">
@@ -40,7 +40,7 @@ const Banner = () => {
             <img
               src={bannerImg}
               alt="Banner"
-              className=" object-center object-cover"
+              className="w-full h-full object-center object-cover"
             />
           </div>
         </div>

@@ -4,3 +4,6 @@
 .gradient {
  @apply bg-gradient-to-l from-[#9514FA] to-[#4F39F6]
 }
+.container {
+ @apply max-w-6xl mx-auto
+}
