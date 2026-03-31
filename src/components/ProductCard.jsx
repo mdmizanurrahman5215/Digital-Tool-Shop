@@ -1,10 +1,17 @@
+
 import React from 'react'
 import { FaCheck } from 'react-icons/fa6'
+import { toast } from 'react-toastify'
 
 const ProductCard = ({product , setCart}) => {
     const { name, description, price,tag, period, features, icon} = product
     const handleBuyNow = (product) => {
         setCart((prevCart) => [...prevCart, product]);
+         toast.success(`${name} added to cart !`,{
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+         }) 
      
     }   
   return (

@@ -1,19 +1,40 @@
 import React from 'react'
+import EmptyCart from './EmptyCart'
+import { toast } from 'react-toastify'
 
 
 const Cart = ({ cart, setCart }) => {
+
+    
     const total = cart.reduce((acc, cur)=> {
         return acc + Number( cur.price)
     }, 0 )
     const handleDeleteItem = (id) => {
         const updateCart = cart.filter((i)=>i.id !== id)
         setCart(updateCart)
+        toast.success("Item removed from cart!" , {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+        });
+    }
+    const handleCheckout = () => {
+        setCart([])
+        toast.success("Checkout successful! Thank you for your purchase.", {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+        });
     }
   return (
     <div className='border p-6 rounded-lg  border-gray-200'>
       <div className='w-full'>
         <h1 className='text-3xl font-bold'>Your Cart</h1>
-        <ul>
+
+        {
+            cart.length ? (
+                <div>
+                     <ul>
            {
             cart && cart.map((item)=>{
                 const { name, price, icon, id } = item
@@ -35,12 +56,24 @@ const Cart = ({ cart, setCart }) => {
             })
            }
         </ul>
-        <div className='flex justify-between items-center my-6'>
+          <div className='flex justify-between items-center my-6'>
             <h2 className='text-2xl font-bold' >Total</h2>
             <p className='text-2xl font-semibold'>${total.toFixed(2)}</p>
 
         </div>
-        <button  onClick={()=>setCart([])} className='gradient text-white font-semibold cursor-pointer w-full rounded-full py-2'>Proceed to Checkout</button>
+        <button   onClick={()=> handleCheckout()} className='gradient text-white font-semibold cursor-pointer w-full rounded-full py-2'>Proceed to Checkout</button>
+
+                </div>
+
+            ) : (
+                <div>
+                    <EmptyCart/>
+                </div>
+            )
+        }
+       
+       
+      
 
 
       </div>
