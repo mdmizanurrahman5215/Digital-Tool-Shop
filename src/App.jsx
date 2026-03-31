@@ -1,12 +1,17 @@
 
 import './App.css'
+import Banner from './components/Banner'
+import Stats from './components/Stats'
+import Header from './layout/Header'
 
 function App() {
  
 
   return (
 <>
-<h1 className='text-red-400'>DigiTools</h1>
+ <Header/>
+ <Banner/>
+ <Stats/>
 </>
   )
 }

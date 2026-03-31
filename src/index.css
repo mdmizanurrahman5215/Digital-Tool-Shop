@@ -1,2 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+.gradient {
+ @apply bg-gradient-to-l from-[#9514FA] to-[#4F39F6]
+}

@@ -1,0 +1,113 @@
+
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with customizable templates and ATS-friendly formatting.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "📝"
+  },
+  {
+    "id": 2,
+    "name": "TaskFlow",
+    "description": "A productivity tool to manage daily tasks and team collaboration efficiently.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Kanban boards", "Team collaboration", "Deadline reminders"],
+    "icon": "✅"
+  },
+  {
+    "id": 3,
+    "name": "Designify",
+    "description": "Graphic design tool for social media posts, banners, and presentations.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Drag & drop editor", "500+ templates", "Brand kits"],
+    "icon": "🎨"
+  },
+  {
+    "id": 4,
+    "name": "CodeMaster IDE",
+    "description": "Lightweight online code editor for multiple programming languages.",
+    "price": 49.99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Syntax highlighting", "Auto-complete", "Cloud save"],
+    "icon": "💻"
+  },
+  {
+    "id": 5,
+    "name": "FitTrack",
+    "description": "Track workouts, calories, and health metrics in one place.",
+    "price": 5.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Workout planner", "Calorie counter", "Progress charts"],
+    "icon": "🏋️"
+  },
+  {
+    "id": 6,
+    "name": "FinanceGuru",
+    "description": "Personal finance management tool to track expenses and savings.",
+    "price": 29.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Expense tracking", "Budget planning", "Reports & analytics"],
+    "icon": "💰"
+  },
+  {
+    "id": 7,
+    "name": "LearnHub",
+    "description": "Online learning platform with courses in tech, business, and design.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Video courses", "Certificates", "Offline access"],
+    "icon": "📚"
+  },
+  {
+    "id": 8,
+    "name": "SecureVault",
+    "description": "Password manager to securely store and manage credentials.",
+    "price": 3.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Encrypted storage", "Auto-fill", "Multi-device sync"],
+    "icon": "🔐"
+  },
+  {
+    "id": 9,
+    "name": "MailBoost",
+    "description": "Email marketing platform for campaigns and automation.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Email templates", "Automation", "Analytics dashboard"],
+    "icon": "📧"
+  },
+  {
+    "id": 10,
+    "name": "ClipMaster",
+    "description": "Video editing tool for creators with easy-to-use editing features.",
+    "price": 59.99,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Timeline editing", "Effects & transitions", "4K export"],
+    "icon": "🎬"
+  }
+]
