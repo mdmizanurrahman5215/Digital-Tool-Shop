@@ -7,6 +7,7 @@ import Stats from "./components/Stats";
 import Step from "./components/Step";
 import Footer from "./layout/Footer";
 import Header from "./layout/Header";
+import WorkFlow from "./components/WorkFlow";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -19,6 +20,7 @@ function App() {
       <PremiumTools setCart={setCart} cart={cart} />
       <Step />
       <Pricing />
+      <WorkFlow />
       <Footer />
     </>
   );
